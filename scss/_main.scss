@@ -1,0 +1,198 @@
+// header
+.header {
+  height: 100vh;
+  background: url('/images/bg_home_sm.svg') no-repeat 20px 90%;
+  background-size: calc( 100% - 40px );
+  position: relative;
+  @include desktop {
+    background: url('/images/bg_home.svg') no-repeat right top;
+    background-size: contain;
+  }
+  &-horizontal {
+    border-bottom: 2px solid $warning;
+    @include desktop {
+      border-bottom: none;
+      margin-bottom: 30px;
+    }
+  }
+  &-scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50% );
+    bottom: 20px;
+    color: #747474;
+  }
+}
+
+// nav
+.nav {
+  padding: 16px 0;
+  @include desktop {
+    padding: 24px 0;
+  }
+  &-logo a {
+    background: url('/images/logo.svg') no-repeat center;
+    background-size: contain;
+    width: 131px;
+    height: 40px;
+    vertical-align: middle;
+    @include textHide;
+    @include desktop {
+      width: 218px;
+      height: 40px;
+    }
+  }
+  &-btn {
+    padding: 8px 32px;
+    background: $danger;
+    border-radius: 100px;
+  }
+}
+
+// social
+.social {
+  margin: 100px 0 60px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-img {
+    width: 60px;
+    height: 60px;
+    @include desktop {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  h4 {
+    white-space: nowrap !important;
+  }
+}
+
+// character
+.character {
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-card {
+    overflow: hidden;
+    height: 100%;
+  }
+  &-card .card-img {
+    vertical-align: middle;
+  }
+  &-card .card-content {
+    padding: 16px 16px 24px;
+  }
+}
+
+// feature
+.feature {
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-list {
+    order: 2;
+    @include desktop-lg {
+      order: 1;
+    }
+  }
+  &-content {
+    order: 1;
+    @include desktop-lg {
+      order: 2;
+    }
+  }
+  &-card {
+    max-width: 90%;
+    padding: 48px 32px;
+    height: 100%;
+    @include desktop {
+      max-width: 230px;
+      margin: 0 0 auto 0;
+      padding: 16px 8px;
+    }
+    @include desktop-lg {
+      padding: 48px 32px;
+    }
+  }
+  &-card .card-icon {
+    width: 86px;
+    height: 86px;
+    border-radius: 200px;
+  }
+  &-btn {
+    padding: 12px 32px;
+    border-radius: 200px;
+  }
+}
+
+// feedback
+.feedback {
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-title {
+    margin-bottom: 88px;
+    @include desktop {
+      margin-bottom: 104px;
+    }
+  }
+  &-hide {
+    display: none;
+    @include desktop {
+      display: block;
+    }
+  }
+  &-axis .dot {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 4px;
+    border-radius: 100px;
+  }
+}
+
+.feedback-card {
+  position: relative;
+  padding: 48px 32px 24px;
+  .card-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 200px;
+    position: absolute;
+    top: -56px;
+  }
+  .card-comment {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+  }
+  .icon-stars img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+// footer
+.footer {
+  margin-bottom: 60px;
+  background: url('/images/home_footer.png') no-repeat center top 0%;
+  background-size: cover;
+  padding-top: 260px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-btn {
+    padding: 12px 32px;
+    border-radius: 200px;
+  }
+}
+
+// copyright
+.copyright {
+  padding: 16px 0;
+  background: #F5F5F5;
+}

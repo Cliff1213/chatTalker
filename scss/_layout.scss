@@ -1,0 +1,72 @@
+// grid
+.container {
+  max-width: 1104px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  @include desktop {
+    padding-left: $gutter-width / 2;
+    padding-right: $gutter-width / 2;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -( $gutter-width / 2 );
+  margin-right: -( $gutter-width / 2 );
+}
+
+
+// merge cols
+%col {
+  width: 100%; // 使用 max-width 會跑版
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+  min-height: 1px
+};
+
+@for $i from 1 through $grid-num {
+  .col-#{ $i } {
+    @extend %col
+  };
+
+  .col-md-#{ $i } {
+    @extend %col
+  }
+};
+
+// col
+@media ( min-width: 375px ) {
+  @for $i from 1 through $grid-num {
+    .col-#{ $i } {
+      max-width: percentage( $i / $grid-num );
+    }
+  }
+}
+
+// col-sm
+@media ( min-width: 576px ) {
+  @for $i from 1 through $grid-num {
+    .col-sm-#{ $i } {
+      max-width: percentage( $i / $grid-num );
+    }
+  }
+}
+
+// col-md
+@media ( min-width: 768px ) {
+  @for $i from 1 through $grid-num {
+    .col-md-#{ $i } {
+      max-width: percentage( $i / $grid-num );
+    }
+  }
+}
+
+// col-lg
+@media ( min-width: 960px ) {
+  @for $i from 1 through $grid-num {
+    .col-lg-#{ $i } {
+      max-width: percentage( $i / $grid-num );
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// text hide
+@mixin textHide {
+  text-indent: 101%;
+  word-spacing: nowrap;
+  overflow: hidden;
+  display: inline-block;
+};
+// RWD
+@mixin desktop-lg {
+  @media ( min-width: 960px ) {
+    @content
+  }
+};
+@mixin desktop {
+  @media ( min-width: 768px ) {
+    @content
+  }
+};
+@mixin pad-lg {
+  @media ( min-width: 576px ) {
+    @content
+  }
+};
+@mixin pad {
+  @media ( min-width: 375px ) {
+    @content
+  }
+};
