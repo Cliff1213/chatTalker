@@ -1,5 +1,6 @@
+// Page-index
 // header
-.header {
+.header-index {
   height: 100vh;
   background: url('https://raw.githubusercontent.com/Cliff1213/chatTalker/02868bc2682c15a0c8f93829d6d17f558521a9e6/images/bg_home_sm.svg') no-repeat 20px 90%;
   background-size: calc( 100% - 40px );
@@ -8,19 +9,24 @@
     background: url('https://raw.githubusercontent.com/Cliff1213/chatTalker/02868bc2682c15a0c8f93829d6d17f558521a9e6/images/bg_home.svg') no-repeat right top;
     background-size: contain;
   }
-  &-horizontal {
-    border-bottom: 2px solid $warning;
-    @include desktop {
-      border-bottom: none;
-      margin-bottom: 30px;
-    }
-  }
-  &-scroll {
+  .icon-arrow {
     position: absolute;
     left: 50%;
     transform: translateX( -50% );
     bottom: 20px;
     color: #747474;
+  }
+  .banner {
+    padding-top: 32px;
+    @include desktop {
+      padding-top: 30px;
+    }
+  }
+}
+.horizontal {
+  border-bottom: 2px solid $warning;
+  @include desktop {
+    border-bottom: none;
   }
 }
 
@@ -175,7 +181,6 @@
   }
 }
 
-
 // footer
 .footer {
   margin-bottom: 60px;
@@ -196,3 +201,49 @@
   padding: 16px 0;
   background: #F5F5F5;
 }
+
+// Page-scheme
+// header
+.header-scheme {
+  @include desktop {
+    background: url('/images/banner_scheme.svg') no-repeat top right;
+    background-size: contain;
+  }
+  .banner {
+    padding-top: 48px;
+    height: calc( 100vh - 72px );
+    @include desktop {
+      padding-top: 92px;
+      height: calc( 100vh - 88px );
+    }
+    background: url('/images/banner_scheme_sm.svg') no-repeat right;
+    background-size: cover;
+    @include pad-lg {
+      background: url('/images/banner_scheme.svg') no-repeat top center;
+    }
+    @include desktop {
+      background: none;
+    }
+  }
+
+  .scheme-background {
+    position: absolute;
+    background: $light;
+    height: calc( 100% - 72px );
+    width: 100%;
+    border-radius: 0 0 0 150px;
+    top: 72px;
+    left: 0;
+    z-index: -10;
+    @include pad-lg {
+      height: 470px;
+    }
+    @include desktop {
+      top: 0;
+      left: 0;
+      border-radius: 0 0 0 350px;
+    }
+  }
+}
+
+// options
