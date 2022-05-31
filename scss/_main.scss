@@ -199,7 +199,6 @@
 // copyright
 .copyright {
   padding: 16px 0;
-  background: #F5F5F5;
 }
 
 // Page-scheme
@@ -247,3 +246,62 @@
 }
 
 // options
+.options {
+  margin-bottom: 360px;
+  @include desktop {
+    margin-bottom: 300px;
+  }
+  &-scrollbar {
+    overflow-x: auto;
+  }
+  &-btns {
+    width: 542px;
+    margin: 0 auto 16px;
+  }
+  &-btns a {
+    padding: 8px 16px;
+    border-radius: 100px;
+    margin: 0 8px;
+    white-space: nowrap;
+    @include desktop {
+      padding: 12px 32px;
+    }
+  }
+  .card-title {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 16px;
+  }
+  .card-body {
+    padding: 32px 28px;
+  }
+  .card-list img {
+    margin-right: 12px;
+    @include desktop {
+      width: 16px;
+      height: 14px;
+    }
+  }
+  .card-btn a {
+    padding: 12px 32px;
+    border-radius: 100px;
+  }
+}
+
+.switch {
+  @include desktop {
+    justify-content: space-between;
+  }
+  &-item {
+    width: 169px;
+    height: 108px;
+  }
+  &-icon {
+    margin: 0 6px;
+  }
+  &-text {
+    font-size: 12px;
+  }
+  sub {
+    font-size: 12px;
+  }
+}
