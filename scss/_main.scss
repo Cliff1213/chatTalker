@@ -324,6 +324,7 @@
     }
   }
   &-icon {
+    cursor: pointer;
     @include desktop {
       font-size: 20px;
     }

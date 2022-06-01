@@ -956,6 +956,10 @@ img {
   }
 }
 
+.faq-icon {
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .faq-icon {
     font-size: 20px;
