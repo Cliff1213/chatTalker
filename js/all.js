@@ -6,6 +6,10 @@ $('document').ready(function() {
     $('html, body').animate({ scrollTop: $('#social').offset().top - 60 }, 300);
   });
 
+
+  
+
+
+
 });
 
-// swiper

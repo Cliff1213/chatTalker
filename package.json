@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Cliff1213/chatTalker#readme",
   "dependencies": {
-    "jquery": "^3.6.0",
-    "swiper": "^8.2.1"
+    "animate.css": "^4.1.1",
+    "jquery": "^3.6.0"
   }
 }
