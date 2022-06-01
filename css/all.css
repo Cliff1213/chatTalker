@@ -788,7 +788,7 @@ img {
 
 @media (min-width: 768px) {
   .header-scheme {
-    background: url("/images/banner_scheme.svg") no-repeat top right;
+    background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/9d92b0a6dee69410690d3e20f89b76ffe391457b/images/banner_scheme.svg") no-repeat top right;
     background-size: contain;
   }
 }
@@ -796,7 +796,7 @@ img {
 .header-scheme .banner {
   padding-top: 48px;
   height: calc( 100vh - 72px);
-  background: url("/images/banner_scheme_sm.svg") no-repeat right;
+  background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/9d92b0a6dee69410690d3e20f89b76ffe391457b/images/banner_scheme_sm.svg") no-repeat right;
   background-size: cover;
 }
 
@@ -809,7 +809,7 @@ img {
 
 @media (min-width: 576px) {
   .header-scheme .banner {
-    background: url("/images/banner_scheme.svg") no-repeat top center;
+    background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/9d92b0a6dee69410690d3e20f89b76ffe391457b/images/banner_scheme.svg") no-repeat top center;
   }
 }
 
