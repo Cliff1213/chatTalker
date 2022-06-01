@@ -247,9 +247,9 @@
 
 // options
 .options {
-  margin-bottom: 360px;
+  margin-bottom: 60px;
   @include desktop {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
   }
   &-scrollbar {
     overflow-x: auto;
@@ -274,6 +274,12 @@
   .card-body {
     padding: 32px 28px;
   }
+  .card-list {
+    font-size: 14px;
+    @include pad-lg {
+      font-size: 16px;
+    }
+  }
   .card-list img {
     margin-right: 12px;
     @include desktop {
@@ -286,7 +292,6 @@
     border-radius: 100px;
   }
 }
-
 .switch {
   @include desktop {
     justify-content: space-between;
@@ -303,5 +308,30 @@
   }
   sub {
     font-size: 12px;
+  }
+}
+
+// FAQ
+.faq {
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 100px;
+  }
+  &-item {
+    padding: 16px;
+    @include desktop {
+      padding: 16px 32px;
+    }
+  }
+  &-icon {
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+  &-answer {
+    margin-top: 16px;
+    @include desktop {
+      margin-top: 24px;
+    }
   }
 }
