@@ -1,3 +1,4 @@
+// jquery
 $('document').ready(function() {
   // index header scroll icon
   $('.header-index').on('click', '#iconArrow', function(e) {
@@ -6,3 +7,5 @@ $('document').ready(function() {
   });
 
 });
+
+// swiper
