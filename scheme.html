@@ -59,12 +59,12 @@
                 <div class="switch d-flex justify-around align-center mb-3 mb-md-4">
                   <div class="switch-item d-flex flex-column justify-center align-center bg-bright radius">
                     <p class="switch-text">訂閱用戶數</p>
-                    <p class="switch-number text-info fs-4 fs-md-5">10000<sub>位</sub></p>
+                    <p class="switch-number text-info fs-4 fs-md-5"><span class="user">10000</span><sub>位</sub></p>
                   </div>
                   <i class="switch-icon fa-solid fa-equals"></i>
                   <div class="switch-item d-flex flex-column justify-center align-center bg-bright radius">
                     <p class="switch-text">試算每月的費用</p>
-                    <p class="switch-number fs-4 fs-md-5">600<sub>TWD</sub></p>
+                    <p class="switch-number fs-4 fs-md-5"><span class="price-basic">600</span><sub>TWD</sub></p>
                   </div>
                 </div>
   
@@ -96,7 +96,7 @@
 
         <div class="col-12 col-sm-10 col-md-6 col-lg-5">
           <div class="options-card text-dark shadow radius d-flex flex-column h-100">
-            <h4 class="card-title fs-3 fw-bold text-center">基本版</h4>
+            <h4 class="card-title fs-3 fw-bold text-center">標準版</h4>
             
             <div class="card-body d-flex flex-column justify-between h-100">
               <div class="card-info mb-4">
@@ -104,12 +104,12 @@
                 <div class="switch d-flex justify-around align-center mb-3 mb-md-4">
                   <div class="switch-item d-flex flex-column justify-center align-center bg-bright radius">
                     <p class="switch-text">訂閱用戶數</p>
-                    <p class="switch-number text-info fs-4 fs-md-5">10000<sub>位</sub></p>
+                    <p class="switch-number text-info fs-4 fs-md-5"><span class="user">10000</span><sub>位</sub></p>
                   </div>
                   <i class="switch-icon fa-solid fa-equals"></i>
                   <div class="switch-item d-flex flex-column justify-center align-center bg-bright radius">
                     <p class="switch-text">試算每月的費用</p>
-                    <p class="switch-number fs-4 fs-md-5">1,600<sub>TWD</sub></p>
+                    <p class="switch-number fs-4 fs-md-5"><span class="price-standard">1,600</span><sub>TWD</sub></p>
                   </div>
                 </div>
   
@@ -149,30 +149,39 @@
       <div class="row">
         <div class="col-12 col-md-10 mx-auto">
           <ul class="faq-list flex-column align-center">
-            <li class="faq-item shadow radius mb-2">
+            <li class="faq-item shadow radius mb-2" id="faqItem">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">我要怎麼變更方案？</p>
-                <i class="faq-icon text-info fa-solid fa-plus"></i>
+                <a href="#" class="faq-icon">
+                  <i class="icon-minus text-info fa-solid fa-minus"></i>
+                  <i class="icon-plus text-info d-none fa-solid fa-plus"></i>
+                </a>
               </div>
-              <div class="faq-answer">
+              <div class="faq-answer" id="faqAnswer">
                 <p class="text-secondary">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
               </div>
             </li>
-            <li class="faq-item shadow radius mb-2">
+            <li class="faq-item shadow radius mb-2" id="faqItem">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">如果我沒有LINE官方帳號怎麼辦？</p>
-                <i class="faq-icon text-info fa-solid fa-plus"></i>
+                <a href="#" class="faq-icon">
+                  <i class="icon-minus text-info d-none fa-solid fa-minus"></i>
+                  <i class="icon-plus text-info fa-solid fa-plus"></i>
+                </a>
               </div>
-              <div class="faq-answer">
+              <div class="faq-answer d-none" id="faqAnswer">
                 <p class="text-secondary">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
               </div>
             </li>
-            <li class="faq-item shadow radius">
+            <li class="faq-item shadow radius" id="faqItem">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">非上班日有客服支援嗎？</p>
-                <i class="faq-icon text-info fa-solid fa-plus"></i>
+                <a href="#" class="faq-icon">
+                  <i class="icon-minus text-info d-none fa-solid fa-minus"></i>
+                  <i class="icon-plus text-info fa-solid fa-plus"></i>
+                </a>
               </div>
-              <div class="faq-answer">
+              <div class="faq-answer d-none" id="faqAnswer">
                 <p class="text-secondary">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
               </div>
             </li>
@@ -183,5 +192,11 @@
   </div>
 
   <p class="copyright text-center text-dark bg-bright">© 2022 chatTalker. All Rights Reserved.</p>
+
+  <!-- scroll2top -->
+  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center" id="scroll2top">TOP</a>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/all.js"></script>
 </body>
 </html>

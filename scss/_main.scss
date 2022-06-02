@@ -52,6 +52,10 @@
     padding: 8px 32px;
     background: $danger;
     border-radius: 100px;
+    &:hover {
+      background: $info;
+      transition: .2s;
+    }
   }
 }
 
@@ -131,6 +135,10 @@
   &-btn {
     padding: 12px 32px;
     border-radius: 200px;
+    &:hover {
+      background: $danger;
+      transition: .2s;
+    }
   }
 }
 
@@ -181,8 +189,6 @@
   }
 }
 
-
-
 // footer
 .footer {
   margin-bottom: 60px;
@@ -195,6 +201,10 @@
   &-btn {
     padding: 12px 32px;
     border-radius: 200px;
+    &:hover {
+      background: $danger;
+      transition: .2s;
+    }
   }
 }
 
@@ -265,6 +275,10 @@
     border-radius: 100px;
     margin: 0 8px;
     white-space: nowrap;
+    &:hover {
+      background: $danger;
+      transition: .2s;
+    }
     @include desktop {
       padding: 12px 32px;
     }
@@ -292,6 +306,10 @@
   .card-btn a {
     padding: 12px 32px;
     border-radius: 100px;
+    &:hover {
+      background: $danger;
+      transition: .2s;
+    }
   }
 }
 .switch {
@@ -313,7 +331,6 @@
   }
 }
 
-
 // FAQ
 .faq {
   margin-bottom: 60px;
@@ -322,12 +339,16 @@
   }
   &-item {
     padding: 16px;
+    cursor: pointer;
     @include desktop {
       padding: 16px 32px;
     }
+    &:hover {
+      background: lighten( $info, 35% );
+      transition: .2s;
+    }
   }
-  &-icon {
-    cursor: pointer;
+  &-icon i {
     @include desktop {
       font-size: 20px;
     }
@@ -337,5 +358,23 @@
     @include desktop {
       margin-top: 24px;
     }
+  }
+}
+
+// scroll2top
+.scroll2top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 200px;
+  &:hover {
+    background: $danger;
+    transition: .2s;
+  }
+  @include desktop {
+    width: 70px;
+    height: 70px;
   }
 }

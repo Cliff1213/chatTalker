@@ -163,6 +163,10 @@ img {
   background: #56C4C5;
 }
 
+.bg-danger {
+  background: #FF5D50;
+}
+
 .radius {
   border-radius: 12px;
 }
@@ -589,6 +593,12 @@ img {
   border-radius: 100px;
 }
 
+.nav-btn:hover {
+  background: #56C4C5;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .social {
   margin: 100px 0 60px;
 }
@@ -707,6 +717,12 @@ img {
   border-radius: 200px;
 }
 
+.feature-btn:hover {
+  background: #FF5D50;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .feedback {
   margin-bottom: 60px;
 }
@@ -784,6 +800,12 @@ img {
 .footer-btn {
   padding: 12px 32px;
   border-radius: 200px;
+}
+
+.footer-btn:hover {
+  background: #FF5D50;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .copyright {
@@ -874,6 +896,12 @@ img {
   white-space: nowrap;
 }
 
+.options-btns a:hover {
+  background: #FF5D50;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 @media (min-width: 768px) {
   .options-btns a {
     padding: 12px 32px;
@@ -915,6 +943,12 @@ img {
   border-radius: 100px;
 }
 
+.options .card-btn a:hover {
+  background: #FF5D50;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 @media (min-width: 768px) {
   .switch {
     -webkit-box-pack: justify;
@@ -952,6 +986,7 @@ img {
 
 .faq-item {
   padding: 16px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -960,12 +995,14 @@ img {
   }
 }
 
-.faq-icon {
-  cursor: pointer;
+.faq-item:hover {
+  background: #dbf2f3;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media (min-width: 768px) {
-  .faq-icon {
+  .faq-icon i {
     font-size: 20px;
   }
 }
@@ -977,6 +1014,28 @@ img {
 @media (min-width: 768px) {
   .faq-answer {
     margin-top: 24px;
+  }
+}
+
+.scroll2top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 200px;
+}
+
+.scroll2top:hover {
+  background: #FF5D50;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media (min-width: 768px) {
+  .scroll2top {
+    width: 70px;
+    height: 70px;
   }
 }
 
