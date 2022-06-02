@@ -538,6 +538,12 @@ img {
   color: #747474;
 }
 
+.header-index .icon-arrow:hover {
+  color: #56C4C5;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .header-index .banner {
   padding-top: 32px;
 }

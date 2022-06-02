@@ -45,5 +45,17 @@ $('document').ready(function() {
     $(this).siblings().find('.faq-icon .icon-minus').addClass('d-none');
     $(this).siblings().find('.faq-icon .icon-plus').removeClass('d-none');
   });
+
+
+  // animate css
+  $('.header-index .banner-title').addClass('animate__animated animate__backInLeft');
+  $('.header-scheme .banner .container').addClass('animate__animated animate__fadeInDown');
+
+  // 事件結束後移除該 class // animationend 屬於一個可被監聽的 event
+  $('.header-index, .scheme-index').on('animationend', function() {
+    // console.log('animate end');
+    $('.header-index .banner-title').removeClass('animate__animated animate__backInLeft');
+    $('.header-scheme .banner .container').removeClass('animate__animated animate__fadeInDown');
+  })
 });
 
