@@ -1,13 +1,13 @@
 // jquery
 $('document').ready(function() {
   // index header scroll icon
-  $('.header-index').on('click', '#iconArrow', function(e) {
+  $('.header-index').on('click', '.icon-arrow', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $('#social').offset().top - 60 }, 200);
+    $('html, body').animate({ scrollTop: $('.social').offset().top - 50 }, 200);
   });
 
   // scroll2top
-  $('html, body').on('click', '#scroll2top', function(e) {
+  $('html, body').on('click', '.scroll2top', function(e) {
     e.preventDefault();
 
     $('html, body').animate({ scrollTop: 0 }, 200);
@@ -36,10 +36,10 @@ $('document').ready(function() {
 
 
   // scheme FAQ list
-  $('.faq-list').on('click', '#faqItem', function(e) {
+  $('.faq-list').on('click', '.faq-item', function(e) {
     e.preventDefault();
-    $(this).find('#faqAnswer').slideToggle(200);
-    $(this).siblings().find('#faqAnswer').slideUp(200);
+    $(this).find('.faq-answer').slideToggle(200);
+    $(this).siblings().find('.faq-answer').slideUp(200);
 
     $(this).find('.faq-icon i').toggleClass('d-none');
     $(this).siblings().find('.faq-icon .icon-minus').addClass('d-none');
@@ -57,5 +57,9 @@ $('document').ready(function() {
     $('.header-index .banner-title').removeClass('animate__animated animate__backInLeft');
     $('.header-scheme .banner .container').removeClass('animate__animated animate__fadeInDown');
   })
+
+
+  // test
+
 });
 

@@ -11,9 +11,6 @@
 .flex-column {
   flex-direction: column;
 }
-.wrap {
-  flex-wrap: wrap;
-}
 .justify-center {
   justify-content: center;
 }
@@ -47,11 +44,11 @@
 .text-dark {
   color: $dark;
 }
-.fw-bold {
-  font-weight: bold;
+.bg-white {
+  background: $white;
 }
 .bg-bright {
-  background: #f5f5f5;
+  background: $bright;
 }
 .bg-light {
   background: $light;
@@ -59,8 +56,14 @@
 .bg-info {
   background: $info;
 }
+.bg-warning {
+  background: $warning;
+}
 .bg-danger {
   background: $danger;
+}
+.fw-bold {
+  font-weight: bold;
 }
 .radius {
   border-radius: 12px;
@@ -76,6 +79,12 @@
 }
 .d-none {
   display: none;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
 }
 
 // margin-bottom setting
@@ -96,6 +105,13 @@ $margin-bottom: (
 @each $key, $value in $margin-bottom {
   @media ( min-width: 768px ) {
     .mb-md-#{ $key } {
+      margin-bottom: $value;
+    }
+  }
+};
+@each $key, $value in $margin-bottom {
+  @media ( min-width: 960px ) {
+    .mb-lg-#{ $key } {
       margin-bottom: $value;
     }
   }
