@@ -3,7 +3,7 @@ $('document').ready(function() {
   // index header scroll icon
   $('.header-index').on('click', '#iconArrow', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $('#social').offset().top - 60 }, 200);
+    $('html, body').animate({ scrollTop: $('#social').offset().top - 50 }, 200);
   });
 
   // scroll2top
@@ -57,5 +57,9 @@ $('document').ready(function() {
     $('.header-index .banner-title').removeClass('animate__animated animate__backInLeft');
     $('.header-scheme .banner .container').removeClass('animate__animated animate__fadeInDown');
   })
+
+
+  // test
+
 });
 

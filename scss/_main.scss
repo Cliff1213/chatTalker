@@ -2,12 +2,19 @@
 // header
 .header-index {
   height: 100vh;
+  position: relative;
   background: url('https://raw.githubusercontent.com/Cliff1213/chatTalker/02868bc2682c15a0c8f93829d6d17f558521a9e6/images/bg_home_sm.svg') no-repeat 20px 90%;
   background-size: calc( 100% - 40px );
   position: relative;
   @include desktop {
     background: url('https://raw.githubusercontent.com/Cliff1213/chatTalker/02868bc2682c15a0c8f93829d6d17f558521a9e6/images/bg_home.svg') no-repeat right top;
     background-size: contain;
+  }
+  .horizontal {
+    border-bottom: 2px solid $warning;
+    @include desktop {
+      border-bottom: none;
+    }
   }
   .icon-arrow {
     position: absolute;
@@ -26,11 +33,13 @@
       padding-top: 30px;
     }
   }
-}
-.horizontal {
-  border-bottom: 2px solid $warning;
-  @include desktop {
-    border-bottom: none;
+
+  .header-ball {
+    width: 138px;
+    height: 360px;
+    position: absolute;
+    bottom: -15%;
+    background: url('/images/ball01.svg') no-repeat right;
   }
 }
 
@@ -85,6 +94,7 @@
 // character
 .character {
   margin-bottom: 60px;
+  position: relative;
   @include desktop {
     margin-bottom: 100px;
   }
@@ -149,6 +159,7 @@
 // feedback
 .feedback {
   margin-bottom: 60px;
+  position: relative;
   @include desktop {
     margin-bottom: 100px;
   }
