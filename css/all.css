@@ -142,10 +142,6 @@ img {
   color: #221E1F;
 }
 
-.fw-bold {
-  font-weight: bold;
-}
-
 .bg-white {
   background: #FFFFFF;
 }
@@ -162,8 +158,16 @@ img {
   background: #56C4C5;
 }
 
+.bg-warning {
+  background: #FFD153;
+}
+
 .bg-danger {
   background: #FF5D50;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 .radius {
@@ -261,6 +265,48 @@ img {
 
 @media (min-width: 768px) {
   .mb-md-6 {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-0 {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-1 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-2 {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-3 {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-4 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-5 {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 960px) {
+  .mb-lg-6 {
     margin-bottom: 48px;
   }
 }
@@ -524,10 +570,8 @@ img {
 
 .header-index {
   height: 100vh;
-  position: relative;
   background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/02868bc2682c15a0c8f93829d6d17f558521a9e6/images/bg_home_sm.svg") no-repeat 20px 90%;
   background-size: calc( 100% - 40px);
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -548,7 +592,6 @@ img {
 }
 
 .header-index .icon-arrow {
-  position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -573,11 +616,25 @@ img {
 }
 
 .header-index .header-ball {
-  width: 138px;
-  height: 360px;
-  position: absolute;
-  bottom: -15%;
-  background: url("/images/ball01.svg") no-repeat right;
+  background: none;
+}
+
+@media (min-width: 576px) {
+  .header-index .header-ball {
+    background: url("/images/ball01.svg") no-repeat right;
+    background-size: cover;
+    width: 100px;
+    height: 200px;
+    bottom: -80px;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-index .header-ball {
+    width: 138px;
+    height: 360px;
+  }
 }
 
 .nav {
@@ -647,9 +704,24 @@ img {
   white-space: nowrap !important;
 }
 
+.social-ball {
+  background: #000;
+  background: url("/images/ball01.svg") no-repeat right;
+  background-size: cover;
+  width: 49px;
+  height: 126px;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 576px) {
+  .social-ball {
+    background: none;
+  }
+}
+
 .character {
   margin-bottom: 60px;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -660,7 +732,6 @@ img {
 
 .character-card {
   overflow: hidden;
-  height: 100%;
 }
 
 .character-card .card-img {
@@ -669,6 +740,29 @@ img {
 
 .character-card .card-content {
   padding: 16px 16px 24px;
+}
+
+.character-ball {
+  background: none;
+}
+
+@media (min-width: 576px) {
+  .character-ball {
+    background: url("/images/ball02.svg") no-repeat;
+    background-size: cover;
+    width: 140px;
+    height: 180px;
+    right: 0;
+    bottom: -40%;
+    z-index: -10;
+  }
+}
+
+@media (min-width: 768px) {
+  .character-ball {
+    width: 210px;
+    height: 310px;
+  }
 }
 
 .feature {
@@ -712,7 +806,6 @@ img {
 .feature-card {
   max-width: 90%;
   padding: 48px 32px;
-  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -746,9 +839,24 @@ img {
   transition: .2s;
 }
 
+.feature-ball {
+  background: url("/images/ball02.svg") no-repeat left;
+  background-size: cover;
+  width: 88px;
+  height: 135px;
+  top: -160px;
+  right: 0;
+  z-index: -10;
+}
+
+@media (min-width: 576px) {
+  .feature-ball {
+    background: none;
+  }
+}
+
 .feedback {
   margin-bottom: 60px;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -785,8 +893,26 @@ img {
   border-radius: 100px;
 }
 
+.feedback-ball {
+  background: url("/images/ball03.svg") no-repeat right;
+  background-size: cover;
+  width: 77px;
+  height: 153px;
+  left: 0;
+  top: 20px;
+  z-index: -10;
+}
+
+@media (min-width: 960px) {
+  .feedback-ball {
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    top: -40px;
+  }
+}
+
 .feedback-card {
-  position: relative;
   padding: 48px 32px 24px;
 }
 
@@ -794,7 +920,6 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 200px;
-  position: absolute;
   top: -56px;
 }
 
@@ -870,10 +995,8 @@ img {
 }
 
 .header-scheme .scheme-background {
-  position: absolute;
   background: #F7F9FD;
   height: calc( 100% - 72px);
-  width: 100%;
   border-radius: 0 0 0 150px;
   top: 72px;
   left: 0;
@@ -889,7 +1012,6 @@ img {
 @media (min-width: 768px) {
   .header-scheme .scheme-background {
     top: 0;
-    left: 0;
     border-radius: 0 0 0 350px;
   }
 }
@@ -971,6 +1093,30 @@ img {
   background: #FF5D50;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.options-ball {
+  background: url("/images/ball03.svg") no-repeat right;
+  background-size: cover;
+  top: -80px;
+  left: 0;
+  width: 94px;
+  height: 200px;
+  z-index: -10;
+}
+
+@media (min-width: 768px) {
+  .options-ball {
+    top: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .options-ball {
+    width: 94px;
+    height: 400px;
+    top: 260px;
+  }
 }
 
 @media (min-width: 768px) {

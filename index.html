@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>chatTalker</title>
+  <meta name="description" content="ChatTalker 最全面的聊天機器人，Facebook、Instagram、LINE 聊天機器人解決方案">
+  <meta property="og:title" content="ChatTalker 最全面的聊天機器人">
+  <meta property="og:description" content="ChatTalker 最全面的聊天機器人，Facebook、Instagram、LINE 聊天機器人解決方案">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="facebook 的網址">
+  <meta property="og:image" content="images/image.png">
+
+  <link rel="shortcut icon" href="/images/favicon_32px.png" type="image/x-icon">
+
+
+  <title>chatTalker 最全面的聊天機器人 - 首頁</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,7 +25,7 @@
 </head>
 <body>
   <!-- header -->
-  <header class="header-index">
+  <header class="header-index relative">
     <div class="horizontal">
       <div class="container">
         <nav class="nav d-flex justify-between align-center">
@@ -39,14 +50,14 @@
     </div>
 
     <!-- scroll down -->
-    <a href="#" class="icon-arrow" id="iconArrow"><i class="fa-2x fa-solid fa-angles-down"></i></a>
+    <a href="#" class="icon-arrow absolute"><i class="fa-2x fa-solid fa-angles-down"></i></a>
 
     <!-- background-ball -->
-    <div class="header-ball"></div>
+    <div class="header-ball absolute"></div>
   </header>
 
   <!-- social -->
-  <div class="social text-center" id="social">
+  <div class="social text-center relative">
     <div class="container">
       <h3 class="social-title text-dark fs-4 fs-md-5 fw-bold mb-4 mb-md-6">三大平台，我來搞定</h3>
       <ul class="row">
@@ -67,16 +78,19 @@
         </li>
       </ul>
     </div>
+
+    <!-- background-ball -->
+    <div class="social-ball absolute"></div>
   </div>
 
   <!-- character -->
-  <div class="character text-center">
+  <div class="character text-center relative">
     <div class="container">
       <h3 class="character-title fs-4 fs-md-5 fw-bold text-dark mb-2">任何的角色，我都能給</h3>
       <p class="fs-1 fs-md-2 text-dark mb-4 mb-md-6">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
       <ul class="row">
-        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-md-0 mx-auto">
-          <div class="character-card bg-white radius shadow">
+        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0 mx-auto">
+          <div class="character-card h-100 bg-white radius shadow">
             <img src="./images/ch01.svg" alt="img_character" class="card-img">
             <div class="card-content">
               <p class="text-info mb-2 fw-bold">活動主</p>
@@ -84,8 +98,8 @@
             </div>
           </div>
         </li>
-        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-md-0  mx-auto">
-          <div class="character-card bg-white radius shadow">
+        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0  mx-auto">
+          <div class="character-card h-100 bg-white radius shadow">
             <img src="./images/ch02.svg" alt="img_character" class="card-img">
             <div class="card-content">
               <p class="text-info mb-2 fw-bold">創作者</p>
@@ -93,8 +107,8 @@
             </div>
           </div>
         </li>
-        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-md-0  mx-auto">
-          <div class="character-card bg-white radius shadow">
+        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0  mx-auto">
+          <div class="character-card h-100 bg-white radius shadow">
             <img src="./images/ch03.svg" alt="img_character" class="card-img">
             <div class="card-content">
               <p class="text-info mb-2 fw-bold">企業品牌</p>
@@ -102,8 +116,8 @@
             </div>
           </div>
         </li>
-        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-md-0  mx-auto">
-          <div class="character-card bg-white radius shadow">
+        <li class="col-10 col-sm-6 col-lg-3 mb-3 mb-lg-0  mx-auto">
+          <div class="character-card h-100 bg-white radius shadow">
             <img src="./images/ch04.svg" alt="img_character" class="card-img">
             <div class="card-content">
               <p class="text-info mb-2 fw-bold">其他</p>
@@ -113,17 +127,20 @@
         </li>
       </ul>
     </div>
+
+    <!-- background-ball -->
+    <div class="character-ball absolute"></div>
   </div>
 
   <!-- feature -->
-  <div class="feature">
+  <div class="feature relative">
     <div class="container">
       <div class="row justify-between align-center">
         <div class="feature-list col-12 col-lg-6">
           <div class="container">
             <ul class="row">
               <li class="col-12 col-sm-6 col-md-3 col-lg-6 mb-3">
-                <div class="feature-card mx-auto shadow radius">
+                <div class="feature-card h-100 bg-white mx-auto shadow radius">
                   <div class="card-icon d-flex justify-center align-center mb-3 shadow">
                     <img src="./images/icon01.svg" alt="icon_feature">
                   </div>
@@ -132,7 +149,7 @@
                 </div>
               </li>
               <li class="col-12 col-sm-6 col-md-3 col-lg-6 mb-3">
-                <div class="feature-card mx-auto shadow radius">
+                <div class="feature-card h-100 bg-white mx-auto shadow radius">
                   <div class="card-icon d-flex justify-center align-center mb-3 shadow">
                     <img src="./images/icon02.svg" alt="icon_feature">
                   </div>
@@ -141,7 +158,7 @@
                 </div>
               </li>
               <li class="col-12 col-sm-6 col-md-3 col-lg-6 mb-3">
-                <div class="feature-card mx-auto shadow radius">
+                <div class="feature-card h-100 bg-white mx-auto shadow radius">
                   <div class="card-icon d-flex justify-center align-center mb-3 shadow">
                     <img src="./images/icon03.svg" alt="icon_feature">
                   </div>
@@ -150,7 +167,7 @@
                 </div>
               </li>
               <li class="col-12 col-sm-6 col-md-3 col-lg-6 mb-3">
-                <div class="feature-card mx-auto shadow radius">
+                <div class="feature-card h-100 bg-white mx-auto shadow radius">
                   <div class="card-icon d-flex justify-center align-center mb-3 shadow">
                     <img src="./images/icon04.svg" alt="icon_feature">
                   </div>
@@ -169,16 +186,19 @@
         </div>
       </div>
     </div>
+
+    <!-- background-ball -->
+    <div class="feature-ball absolute"></div>
   </div>
 
   <!-- feedback -->
-  <div class="feedback">
+  <div class="feedback relative">
     <div class="container text-dark feedback-container">
       <h3 class="feedback-title fs-4 fs-md-5 fw-bold text-center">好評如潮</h3>
       <ul class="row mb-3">
         <li class="col-12 col-md-4">
-          <div class="feedback-card shadow radius">
-            <img src="./images/user01.jpg" alt="img_feedback" class="card-avatar">
+          <div class="feedback-card bg-white shadow radius relative">
+            <img src="./images/user01.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
               <p>原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
             </div>
@@ -196,8 +216,8 @@
           </div>
         </li>
         <li class="col-12 col-md-4 feedback-hide">
-          <div class="feedback-card shadow radius">
-            <img src="./images/user02.jpg" alt="img_feedback" class="card-avatar">
+          <div class="feedback-card bg-white shadow radius relative">
+            <img src="./images/user02.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
               <p>團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
             </div>
@@ -215,8 +235,8 @@
           </div>
         </li>
         <li class="col-12 col-md-4 feedback-hide">
-          <div class="feedback-card shadow radius">
-            <img src="./images/user03.jpg" alt="img_feedback" class="card-avatar">
+          <div class="feedback-card bg-white shadow radius relative">
+            <img src="./images/user03.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
               <p>經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
             </div>
@@ -242,12 +262,15 @@
         <div class="dot"></div>
       </div>
     </div>
+
+    <!-- background-ball -->
+    <div class="feedback-ball absolute"></div>
   </div>
   
   <!-- footer -->
   <div class="footer">
     <div class="container text-center">
-      <h3 class="footer-title fs-3 fs-md-5 fw-bold mb-3 mb-md-6">\ 美好用戶體驗，從對話開始 /</h3>
+      <h3 class="footer-title text-dark fs-3 fs-md-5 fw-bold mb-3 mb-md-6">\ 美好用戶體驗，從對話開始 /</h3>
       <a href="scheme.html" class="footer-btn fs-1 text-light bg-info d-inline-block">方案費用</a>
     </div>
   </div>
@@ -255,7 +278,7 @@
   <p class="copyright text-center text-dark bg-bright">© 2022 chatTalker. All Rights Reserved.</p>
 
   <!-- scroll2top -->
-  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center" id="scroll2top">TOP</a>
+  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center">TOP</a>
 
   <script src="./js/jquery.js"></script>
   <script src="./js/all.js"></script>

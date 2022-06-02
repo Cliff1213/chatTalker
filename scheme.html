@@ -4,12 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>chatTalker</title>
+  <meta name="description" content="ChatTalker 最全面的聊天機器人，Facebook、Instagram、LINE 聊天機器人解決方案">
+  <meta property="og:title" content="ChatTalker 最全面的聊天機器人">
+  <meta property="og:description" content="ChatTalker 最全面的聊天機器人，Facebook、Instagram、LINE 聊天機器人解決方案">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="facebook 的網址">
+  <meta property="og:image" content="images/image.png">
+  
+  <link rel="shortcut icon" href="/images/favicon_32px.png" type="image/x-icon">
+  
+  
+  <title>chatTalker 最全面的聊天機器人 - 方案費用</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+  
   <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
@@ -31,11 +42,11 @@
       </div>
     </div>
 
-    <div class="scheme-background"></div>
+    <div class="scheme-background w-100 absolute"></div>
   </header>
 
   <!-- options -->
-  <div class="options">
+  <div class="options relative">
     <div class="container">
       <h3 class="options-title text-center text-dark fs-4 fs-md-5 fw-bold mb-3 mb-md-6">彈性選擇，提供您選擇最適合的方案</h3>
       <div class="options-scrollbar mb-2 mb-md-4">
@@ -50,7 +61,7 @@
 
       <div class="row justify-center">
         <div class="col-12 col-sm-10 col-md-6 col-lg-5 mb-3 mb-md-0">
-          <div class="options-card text-dark shadow radius d-flex flex-column h-100">
+          <div class="options-card text-dark bg-white shadow radius d-flex flex-column h-100">
             <h4 class="card-title fs-3 fw-bold text-center">基本版</h4>
             
             <div class="card-body d-flex flex-column justify-between h-100">
@@ -95,7 +106,7 @@
         </div>
 
         <div class="col-12 col-sm-10 col-md-6 col-lg-5">
-          <div class="options-card text-dark shadow radius d-flex flex-column h-100">
+          <div class="options-card text-dark bg-white shadow radius d-flex flex-column h-100">
             <h4 class="card-title fs-3 fw-bold text-center">標準版</h4>
             
             <div class="card-body d-flex flex-column justify-between h-100">
@@ -133,13 +144,16 @@
                 </ul>
               </div>
               <div class="card-btn text-center">
-                <a href="###" class="text-light bg-info d-inline-block text-center">立即體驗</a>
+                <a href="###" class="text-dark bg-warning d-inline-block text-center">立即體驗</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- background-ball -->
+    <div class="options-ball absolute"></div>
   </div>
 
   <!-- FAQ -->
@@ -149,7 +163,7 @@
       <div class="row">
         <div class="col-12 col-md-10 mx-auto">
           <ul class="faq-list flex-column align-center">
-            <li class="faq-item shadow radius mb-2" id="faqItem">
+            <li class="faq-item shadow radius mb-2">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">如果我沒有LINE官方帳號怎麼辦？</p>
                 <a href="#" class="faq-icon">
@@ -157,11 +171,11 @@
                   <i class="icon-plus text-info d-none fa-solid fa-plus"></i>
                 </a>
               </div>
-              <div class="faq-answer" id="faqAnswer">
-                <p class="text-secondary">可以輸入 <span class="text-info">CTBot</span> 來加入我們的 Line！<br>也可以在臉書搜尋 chatTalker 來追蹤粉絲專頁。</p>
+              <div class="faq-answer">
+                <p class="text-secondary">可以透過 <span class="text-info">@CTBot</span> 來加入我們的 Line！<br>也可以在臉書搜尋 chatTalker 來追蹤粉絲專頁。</p>
               </div>
             </li>
-            <li class="faq-item shadow radius mb-2" id="faqItem">
+            <li class="faq-item shadow radius mb-2">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">我該怎麼變更已購買的方案？</p>
                 <a href="#" class="faq-icon">
@@ -169,11 +183,11 @@
                   <i class="icon-plus text-info fa-solid fa-plus"></i>
                 </a>
               </div>
-              <div class="faq-answer d-none" id="faqAnswer">
+              <div class="faq-answer d-none">
                 <p class="text-secondary">可以聯繫我們的任何粉絲專業來變更方案，<br>或是透過任何粉絲專業聯繫客服人員。</p>
               </div>
             </li>
-            <li class="faq-item shadow radius" id="faqItem">
+            <li class="faq-item shadow radius">
               <div class="faq-problem d-flex align-center justify-between">
                 <p class="fs-md-1">非上班日有客服支援嗎？</p>
                 <a href="#" class="faq-icon">
@@ -181,7 +195,7 @@
                   <i class="icon-plus text-info fa-solid fa-plus"></i>
                 </a>
               </div>
-              <div class="faq-answer d-none" id="faqAnswer">
+              <div class="faq-answer d-none">
                 <p class="text-secondary">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
               </div>
             </li>
@@ -194,7 +208,7 @@
   <p class="copyright text-center text-dark bg-bright">© 2022 chatTalker. All Rights Reserved.</p>
 
   <!-- scroll2top -->
-  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center" id="scroll2top">TOP</a>
+  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center">TOP</a>
 
   <script src="./js/jquery.js"></script>
   <script src="./js/all.js"></script>

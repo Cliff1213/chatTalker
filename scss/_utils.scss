@@ -44,9 +44,6 @@
 .text-dark {
   color: $dark;
 }
-.fw-bold {
-  font-weight: bold;
-}
 .bg-white {
   background: $white;
 }
@@ -59,8 +56,14 @@
 .bg-info {
   background: $info;
 }
+.bg-warning {
+  background: $warning;
+}
 .bg-danger {
   background: $danger;
+}
+.fw-bold {
+  font-weight: bold;
 }
 .radius {
   border-radius: 12px;
@@ -102,6 +105,13 @@ $margin-bottom: (
 @each $key, $value in $margin-bottom {
   @media ( min-width: 768px ) {
     .mb-md-#{ $key } {
+      margin-bottom: $value;
+    }
+  }
+};
+@each $key, $value in $margin-bottom {
+  @media ( min-width: 960px ) {
+    .mb-lg-#{ $key } {
       margin-bottom: $value;
     }
   }
