@@ -621,7 +621,7 @@ img {
 
 @media (min-width: 576px) {
   .header-index .header-ball {
-    background: url("/images/ball01.svg") no-repeat right;
+    background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball01.svg") no-repeat right;
     background-size: cover;
     width: 100px;
     height: 200px;
@@ -706,7 +706,7 @@ img {
 
 .social-ball {
   background: #000;
-  background: url("/images/ball01.svg") no-repeat right;
+  background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball01.svg") no-repeat right;
   background-size: cover;
   width: 49px;
   height: 126px;
@@ -748,7 +748,7 @@ img {
 
 @media (min-width: 576px) {
   .character-ball {
-    background: url("/images/ball02.svg") no-repeat;
+    background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball02.svg") no-repeat;
     background-size: cover;
     width: 140px;
     height: 180px;
@@ -840,7 +840,7 @@ img {
 }
 
 .feature-ball {
-  background: url("/images/ball02.svg") no-repeat left;
+  background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball02.svg") no-repeat left;
   background-size: cover;
   width: 88px;
   height: 135px;
@@ -894,7 +894,7 @@ img {
 }
 
 .feedback-ball {
-  background: url("/images/ball03.svg") no-repeat right;
+  background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball03.svg") no-repeat right;
   background-size: cover;
   width: 77px;
   height: 153px;
@@ -1096,7 +1096,7 @@ img {
 }
 
 .options-ball {
-  background: url("/images/ball03.svg") no-repeat right;
+  background: url("https://raw.githubusercontent.com/Cliff1213/chatTalker/d21e2e374fe5651c6cf7088d8a7e611c2b1d1106/images/ball03.svg") no-repeat right;
   background-size: cover;
   top: -80px;
   left: 0;
