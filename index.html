@@ -28,7 +28,7 @@
     <div class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-6 d-flex flex-column justify-center">
+          <div class="banner-title col-12 col-lg-6 d-flex flex-column justify-center">
             <p class="text-info fs-0 fs-md-1 fw-bold mb-1">ChatTalker 最全面的聊天機器人</p>
             <h2 class="banner-title text-dark fs-5 fs-md-6 fw-bold mb-2">你愛我像誰？<br>扮演什麼角色我都會</h2>
             <p class="text-dark fs-0 fs-md-2 mb-4 mb-md-0">Facebook、Instagram、LINE 聊天機器人解決方案</p>
@@ -39,11 +39,11 @@
     </div>
 
     <!-- scroll down -->
-    <a href="#" class="icon-arrow"><i class="fa-2x fa-solid fa-angles-down"></i></a>
+    <a href="#" class="icon-arrow" id="iconArrow"><i class="fa-2x fa-solid fa-angles-down"></i></a>
   </header>
 
   <!-- social -->
-  <div class="social text-center">
+  <div class="social text-center" id="social">
     <div class="container">
       <h3 class="social-title text-dark fs-4 fs-md-5 fw-bold mb-4 mb-md-6">三大平台，我來搞定</h3>
       <ul class="row">
@@ -162,7 +162,7 @@
         <div class="feature-content col-12 col-lg-5 mb-4 mb-lg-0 text-center">
           <h3 class="text-dark fs-4 fs-md-5 fw-bold mb-2">快速了解客戶輪廓<br>建立品牌流量池</h3>
           <p class="fs-md-1 mb-2 mb-md-3">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
-          <a href="#" class="feature-btn d-inline-block text-light fs-1 bg-info">方案費用</a>
+          <a href="scheme.html" class="feature-btn d-inline-block text-light fs-1 bg-info">方案費用</a>
         </div>
       </div>
     </div>
@@ -170,7 +170,7 @@
 
   <!-- feedback -->
   <div class="feedback">
-    <div class="container text-dark">
+    <div class="container text-dark feedback-container">
       <h3 class="feedback-title fs-4 fs-md-5 fw-bold text-center">好評如潮</h3>
       <ul class="row mb-3">
         <li class="col-12 col-md-4">
@@ -232,6 +232,8 @@
         </li>
       </ul>
 
+
+
       <div class="feedback-axis d-flex justify-center">
         <div class="dot"></div>
         <div class="dot"></div>
@@ -245,10 +247,16 @@
   <div class="footer">
     <div class="container text-center">
       <h3 class="footer-title fs-3 fs-md-5 fw-bold mb-3 mb-md-6">\ 美好用戶體驗，從對話開始 /</h3>
-      <a href="#" class="footer-btn fs-1 text-light bg-info d-inline-block">方案費用</a>
+      <a href="scheme.html" class="footer-btn fs-1 text-light bg-info d-inline-block">方案費用</a>
     </div>
   </div>
+
   <p class="copyright text-center text-dark bg-bright">© 2022 chatTalker. All Rights Reserved.</p>
 
+  <!-- scroll2top -->
+  <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center" id="scroll2top">TOP</a>
+
+  <script src="./js/jquery.js"></script>
+  <script src="./js/all.js"></script>
 </body>
 </html>
