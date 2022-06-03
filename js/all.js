@@ -68,10 +68,10 @@ $('document').ready(function() {
     pagination: {
       el: '.swiper-pagination',
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
     // Default parameters
     slidesPerView: 1,
     spaceBetween: 10,
