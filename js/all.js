@@ -6,6 +6,13 @@ $('document').ready(function() {
     $('html, body').animate({ scrollTop: $('.social').offset().top - 50 }, 200);
   });
 
+  $('.header-index').mouseenter(function () {
+    $('.icon-arrow').fadeIn(300);
+  });
+  $('.social').mouseenter(function () {
+    $('.icon-arrow').fadeOut(300);
+  });
+
   // scroll2top
   $('html, body').on('click', '.scroll2top', function(e) {
     e.preventDefault();
@@ -59,7 +66,31 @@ $('document').ready(function() {
   })
 
 
-  // test
-
+  // feedback swiper settings
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    // pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16
+      }
+    }
+  })
 });
 
