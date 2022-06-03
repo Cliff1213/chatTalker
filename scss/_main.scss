@@ -213,11 +213,10 @@
       margin-bottom: 104px;
     }
   }
-  &-hide {
-    display: none;
-    @include desktop {
-      display: block;
-    }
+  .swiper { // swiper setting
+    max-width: 1104px;
+    width: 100%;
+    padding: 0 8px !important;
   }
   &-axis .dot {
     width: 10px;
@@ -225,6 +224,11 @@
     background: #ddd;
     margin: 0 4px;
     border-radius: 100px;
+  }
+  .dot-active {
+    width: 16px;
+    height: 10px;
+    background: $warning;
   }
 
   &-ball {
@@ -432,7 +436,7 @@
       padding: 16px 32px;
     }
     &:hover {
-      background: lighten( $info, 35% );
+      background: $bright;
       transition: .2s;
     }
   }

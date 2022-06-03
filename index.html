@@ -193,10 +193,10 @@
 
   <!-- feedback -->
   <div class="feedback relative">
-    <div class="container text-dark feedback-container">
+    <div class="text-dark swiper">
       <h3 class="feedback-title fs-4 fs-md-5 fw-bold text-center">好評如潮</h3>
-      <ul class="row mb-3">
-        <li class="col-12 col-md-4">
+      <ul class="swiper-wrapper mb-3">
+        <li class="swiper-slide">
           <div class="feedback-card bg-white shadow radius relative">
             <img src="./images/user01.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
@@ -215,7 +215,7 @@
             </div>
           </div>
         </li>
-        <li class="col-12 col-md-4 feedback-hide">
+        <li class="swiper-slide">
           <div class="feedback-card bg-white shadow radius relative">
             <img src="./images/user02.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
@@ -234,7 +234,7 @@
             </div>
           </div>
         </li>
-        <li class="col-12 col-md-4 feedback-hide">
+        <li class="swiper-slide">
           <div class="feedback-card bg-white shadow radius relative">
             <img src="./images/user03.jpg" alt="img_feedback" class="card-avatar absolute">
             <div class="card-comment mb-3">
@@ -253,10 +253,30 @@
             </div>
           </div>
         </li>
+
+        <li class="swiper-slide">
+          <div class="feedback-card bg-white shadow radius relative">
+            <img src="./images/user03.jpg" alt="img_feedback" class="card-avatar absolute">
+            <div class="card-comment mb-3">
+              <p>經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+            </div>
+            <p class="fw-bold mb-1">法院戰神</p>
+            <div class="d-flex justify-between">
+              <p>HowBig</p>
+              <div class="icon-stars d-flex align-center">
+                <img src="./images/icon_star.svg" alt="icon_star">
+                <img src="./images/icon_star.svg" alt="icon_star">
+                <img src="./images/icon_star.svg" alt="icon_star">
+                <img src="./images/icon_star.svg" alt="icon_star">
+                <img src="./images/icon_star.svg" alt="icon_star">
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
 
       <div class="feedback-axis d-flex justify-center">
-        <div class="dot"></div>
+        <div class="dot dot-active"></div>
         <div class="dot"></div>
         <div class="dot"></div>
         <div class="dot"></div>
@@ -281,6 +301,8 @@
   <a href="#" class="scroll2top bg-info text-light d-flex justify-center align-center">TOP</a>
 
   <script src="./js/jquery.js"></script>
+  <script src="./js/swiper.js"></script>
+  <!-- <script src="./node_modules/swiper/swiper-bundle.js"></script> -->
   <script src="./js/all.js"></script>
 </body>
 </html>

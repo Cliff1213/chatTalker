@@ -59,7 +59,34 @@ $('document').ready(function() {
   })
 
 
-  // test
+  // feedback swiper settings
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    // pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 16
+      }
+    }
+  })
 
+  // feedback swiper-pagination settings
+  
 });
 
