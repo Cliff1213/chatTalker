@@ -1210,6 +1210,7 @@ img {
   bottom: 20px;
   right: 20px;
   border-radius: 200px;
+  z-index: 10;
 }
 
 .scroll2top:hover {

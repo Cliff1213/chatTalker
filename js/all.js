@@ -6,6 +6,13 @@ $('document').ready(function() {
     $('html, body').animate({ scrollTop: $('.social').offset().top - 50 }, 200);
   });
 
+  $('.header-index').mouseenter(function () {
+    $('.icon-arrow').fadeIn(300);
+  });
+  $('.social').mouseenter(function () {
+    $('.icon-arrow').fadeOut(300);
+  });
+
   // scroll2top
   $('html, body').on('click', '.scroll2top', function(e) {
     e.preventDefault();
@@ -85,8 +92,5 @@ $('document').ready(function() {
       }
     }
   })
-
-  // feedback swiper-pagination settings
-  
 });
 
