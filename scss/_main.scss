@@ -15,16 +15,13 @@
     }
   }
   .icon-arrow {
-    display: none;
-    @include desktop {
-      left: 50%;
-      transform: translateX( -50% );
-      bottom: 20px;
-      color: #747474;
-      &:hover {
-        color: $info;
-        transition: .2s;
-      }
+    left: 50%;
+    transform: translateX( -50% );
+    bottom: 20px;
+    color: #747474;
+    &:hover {
+      color: $info;
+      transition: .2s;
     }
   }
   .banner {
