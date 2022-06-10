@@ -1,19 +1,19 @@
 // grid
 .container {
-  max-width: 1104px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1120px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
-  @include desktop {
-    padding-left: $gutter-width / 2;
-    padding-right: $gutter-width / 2;
-  }
+  // @include desktop {
+  //   padding-left: $gutter-width;
+  //   padding-right: $gutter-width;
+  // }
 }
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -( $gutter-width / 2 );
-  margin-right: -( $gutter-width / 2 );
+  margin-left: -$gutter-width;
+  margin-right: -$gutter-width;
 }
 
 

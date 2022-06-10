@@ -285,8 +285,10 @@
   background: url('https://raw.githubusercontent.com/Cliff1213/chatTalker/master/images/home_footer.png') no-repeat center top 0%;
   background-size: cover;
   padding-top: 260px;
-  @include desktop {
+  @include desktop-lg {
     margin-bottom: 100px;
+    background-size: contain;
+    background-repeat: repeat-x;
   }
   &-btn {
     padding: 12px 32px;
